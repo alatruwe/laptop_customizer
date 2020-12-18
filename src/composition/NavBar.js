@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.css";
 
 class NavBar extends React.Component {
   render() {
