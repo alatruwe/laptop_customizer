@@ -11,15 +11,10 @@ class Cart extends React.Component {
           selected={this.props.selected}
           USCurrencyFormat={this.props.USCurrencyFormat}
         />
-        <div className="summary__total">
-          <div className="summary__total__label">Total</div>
-          <div className="summary__total__value">
-            <Total
-              selected={this.props.selected}
-              USCurrencyFormat={this.props.USCurrencyFormat}
-            />
-          </div>
-        </div>
+        <Total
+          selected={this.props.selected}
+          USCurrencyFormat={this.props.USCurrencyFormat}
+        />
       </section>
     );
   }

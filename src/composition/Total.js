@@ -7,6 +7,13 @@ export default class Total extends React.Component {
       (acc, curr) => acc + selected[curr].cost,
       0
     );
-    return <div>{this.props.USCurrencyFormat.format(total)}</div>;
+    return (
+      <div className="summary__total">
+        <div className="summary__total__label">Total</div>
+        <div className="summary__total__value">
+          <div>{this.props.USCurrencyFormat.format(total)}</div>;
+        </div>
+      </div>
+    );
   }
 }
