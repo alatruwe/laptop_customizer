@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./composition/NavBar";
-import LaptopOptions from "./composition/LaptopOptions";
+import FeatureList from "./composition/FeatureList";
 import Cart from "./composition/Cart";
 
 class App extends React.Component {
@@ -46,12 +46,10 @@ class App extends React.Component {
       <div>
         <NavBar />
         <main>
-          <LaptopOptions
+          <FeatureList
             selected={this.state.selected}
             USCurrencyFormat={this.USCurrencyFormat}
-            handleUpdate={(feature, newValue) =>
-              this.updateFeature(feature, newValue)
-            }
+            handleUpdate={this.updateFeature}
           />
           <Cart
             selected={this.state.selected}
